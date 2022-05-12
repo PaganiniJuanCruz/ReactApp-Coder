@@ -1,9 +1,9 @@
-const App = () => {
-  return (
-    <div>
-      amor
-    </div>
-  );
-}
+import Navbar from "./components/Navbar";
 
+const App = () => {
+    return (
+      <Navbar/>
+    )
+  }
+  
 export default App;
