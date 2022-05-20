@@ -1,23 +1,20 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useState } from "react";
 import styled from 'styled-components'
-import image1 from "../assets/FotoPerfil.jpg"
 
-const ItemCount =  ({ products, stock }) => {
+const ItemCount =  ({ stock }) => {
     const [ count, setCount ] = useState(0);
 
     const addProduct = () => {
-        setCount ( count + 1 )
-        if( count => stock ){
-            setCount( count + 0)
-            alert("THERE ARE NO MORE PRODUCTS AVAILABLE!");
-            }
+        if( count < stock){
+            setCount( count + 1 );
+        }
         }
 
     const subtractProduct = () => {
-        setCount ( count - 1 )
-        if ( count < 1 ){
-            setCount( count + 0 )
+        setCount ( count > 0 )
+        if ( count > 0 ){
+            setCount( count - 1 )
         }
     }
 
@@ -26,17 +23,17 @@ const ItemCount =  ({ products, stock }) => {
             <CardContainer>
                 <div className="container">
                     <div className="image-container">
-                        <img src={ image1 } alt="" className="img"/>
+                        
                     </div>
                     <div className="card-content">
                     <div className="card-title">
-                        <p>Tatum</p>
+                        <p>{}</p>
                     </div>
                     </div>     
                     <div className="btn">
-                        <button className=""  onClick={ subtractProduct }>-</button>
-                        <div className="counter"> {count} </div>
-                        <button className="button button5" onClick={ addProduct }>+</button>
+                        <button className="btn-style"  onClick={ subtractProduct }>-</button>
+                        <div> {count} </div>
+                        <button className="btn-style" onClick={ addProduct }>+</button>
                     </div>
                 </div>
             </CardContainer>
@@ -82,17 +79,14 @@ const CardContainer = styled.div`
 
     .btn{
         display: flex;
-        justify-content: center;
+        justify-content:space-evenly;
     }
 
-    .btn button{
-        padding: 0.5rem;
-        background-color: #855b5b;
-        border: none;
-        transition: 0.2s;
+    .btn-style{
+        background-color: white;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-bottom: 20px;
     }
-
-    .btn button:hover{
-        background-color: beige;
-    }
+    
 `

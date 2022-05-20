@@ -1,0 +1,44 @@
+{"status": 200,
+    "products": [
+    {
+        "id": 1,
+        "name":"Jason Tatum T-Shirt",
+        "price": 22000,
+        "image": "../../assets/FotoPerfil.jpg",
+        "stock": 7,
+        "category": "T-shirt"
+    },
+    {
+        "id": 2,
+        "name":"Stephen Curry T-Shirt",
+        "price": 25000,
+        "image": "../../assets/curry.jpg",
+        "stock": 3,
+        "category": "T-shirt"
+    },
+    {
+        "id": 3,
+        "name":"Luka Doncic T-Shirt",
+        "price": 21000,
+        "image": "../../assets/doncic.jpg",
+        "stock": 10,
+        "category": "T-shirt"
+    },
+    {
+        "id": 4,
+        "name":"Allen Iverson T-Shirt",
+        "price": 22000,
+        "image": "../../assets/iverson.jpg",
+        "stock": 2,
+        "category": "T-shirt"
+    },
+    {
+        "id": 5,
+        "name":"Nike Hiperdunk Pink 2013",
+        "price": 35000,
+        "image": "../../assets/hyperdunk.jpg",
+        "stock": 4,
+        "category": "Shoes"
+    }    
+    ]
+}

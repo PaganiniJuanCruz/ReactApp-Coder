@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar";
-import ItemCount from "./components/ItemCount";
 import './styles.css'
+import ProductContainer from "./components/ProductContainer";
 
 const App = () => {
     return (
       <>
       <Navbar />
-      <ItemCount />
+      <ProductContainer />
       </>
     )
   }
