@@ -18,15 +18,15 @@ const Navbar = () => {
                         </MenuItem>
 
                         <MenuItem>
-                            <MenuItemLink>Shop</MenuItemLink>
+                            <MenuItemLink>T-Shirts</MenuItemLink>
+                        </MenuItem>
+
+                        <MenuItem>
+                            <MenuItemLink>Sneakers</MenuItemLink>
                         </MenuItem>
 
                         <MenuItem>
                             <MenuItemLink>Contact Us</MenuItemLink>
-                        </MenuItem>
-
-                        <MenuItem>
-                            <MenuItemLink>About Us</MenuItemLink>
                         </MenuItem>
                     </Menu>
                 </Wrapper>
