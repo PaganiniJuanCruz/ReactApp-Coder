@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { FaDribbble } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -14,7 +15,7 @@ const Navbar = () => {
 
                     <Menu>
                         <MenuItem>
-                            <MenuItemLink>Home</MenuItemLink>
+                            <MenuItemLink><NavLink to="/">Home</NavLink></MenuItemLink>
                         </MenuItem>
 
                         <MenuItem>
@@ -22,7 +23,7 @@ const Navbar = () => {
                         </MenuItem>
 
                         <MenuItem>
-                            <MenuItemLink>Sneakers</MenuItemLink>
+                            <MenuItemLink><NavLink to="/sneakers/:5">Sneakers</NavLink></MenuItemLink>
                         </MenuItem>
 
                         <MenuItem>

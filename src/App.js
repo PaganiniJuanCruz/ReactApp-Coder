@@ -1,12 +1,10 @@
-import Navbar from "./components/Navbar";
 import './styles.css'
-import ItemListContainer from "./pages/ItemListContainer"
+import RoutesConfig from "./RoutesConfig";
 
 const App = () => {
     return (
       <>
-      <Navbar />
-      <ItemListContainer />
+      <RoutesConfig />
       </>
     )
   }
